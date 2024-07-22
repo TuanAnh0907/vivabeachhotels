@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+.booking_online {
+    margin-left: 25px;
+    margin-right: -5px;
+}
+
+.booking_online p {
+    float: left;
+    text-align: left;
+    text-indent: 0;
+    line-height: inherit;
+    padding: 0;
+    margin: 3px 0 0 5px;
+}
+
+.booking_online fieldset {
+    border: 8px solid #d3cfa5;
+    text-align: center;
+}
+
+.booking_online legend span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.booking_online label {
+    color: #6d6257;
+    font-size: 11px;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+.booking_online input {
+    width: 121px;
+    height: 17px;
+    border: 1px solid #f1ecc2;
+    padding: 4px;
+    background: transparent url(/images/input1_bg.png) no-repeat right bottom;
+    float: left;
+    margin-bottom: 4px;
+}
+
+.booking_online input.submit_booking {
+    background: url(/images/submit.jpg) no-repeat top left;
+    cursor: pointer;
+    width: 112px;
+    height: 25px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #f1ecc2;
+    margin-left: 5px;
+}
+
+.booking_online select {
+    width: 70px;
+    border: 1px solid #e5e0b8;
+    padding: 2px;
+    overflow: auto;
+    margin: 0 0 10px 5px;
+    background: #e5e0b8;
+}
+
+.booking_online ul {
+    list-style-type: none;
+    color: #6d6257;
+    font-size: 11px;
+    text-align: left;
+    margin: 0 0 4px 0;
+}
+
+
+/*
+     FILE ARCHIVED ON 09:20:24 Oct 14, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:36:08 Jul 22, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.964
+  exclusion.robots: 0.067
+  exclusion.robots.policy: 0.049
+  esindex: 0.016
+  cdx.remote: 6.493
+  LoadShardBlock: 77.508 (3)
+  PetaboxLoader3.datanode: 75.144 (4)
+  PetaboxLoader3.resolve: 64.565 (2)
+  load_resource: 68.296
+*/

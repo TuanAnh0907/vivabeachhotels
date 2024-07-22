@@ -1,0 +1,1201 @@
+/* CSS Document */
+
+html, body {
+    margin: 0;
+    padding: 1%;
+    text-align: left;
+    scrollbar-base-color: #bbb796;
+    scrollbar-arrow-color: #6d6257;
+    scrollbar-3dlight-color: #f1ecc2;
+    scrollbar-darkshadow-color: #6d6257;
+    scrollbar-face-color: #e5e0b8;
+    scrollbar-highlight-color: #e5e0b8;
+    scrollbar-shadow-color: #6d6257;
+    scrollbar-track-color: #bbb796;
+
+}
+
+body {
+    font-family: Georgia, Times New Roman, Times, serif;
+    font-size: 13px;
+    background: #e6e1bb url(/images/background.jpg) repeat;
+}
+
+.outerbox {
+    width: 842px;
+    margin: auto;
+    background: url(/images/topbox_bg.png) no-repeat top left;
+    padding-top: 50px;
+}
+
+.innerbox {
+    width: 842px;
+    background: url(/images/bottombox_bg.png) no-repeat bottom left;
+    padding-bottom: 50px;
+    padding-top: 0;
+    margin: 0;
+}
+
+.box {
+    background: url(/images/centerbox_bg.png) repeat-y center;
+    text-align: left;
+}
+
+.clear {
+    background: none;
+    border: 0;
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    position: static;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#CDSWIDFRR {
+    margin: 15px auto !important;
+
+}
+
+/* ===================================================
+   ================TOP ROW HEADER==================
+   ===================LOGO,LANGUAGES and FORM=========*/
+.toprow {
+    width: 100%;
+    height: 177px;
+}
+
+.logo {
+    float: left;
+    width: 380px;
+    height: 177px;
+    background: url(/images/logo.png) no-repeat top left;
+    display: block;
+    margin: -20px 0 0 25px;
+    padding: 0;
+}
+
+/*\*/
+* html .logo {
+    margin: -20px 0 0 15px;
+}
+
+/**/
+.logo span {
+    display: none;
+}
+
+.headerright {
+    width: 400px;
+    height: 177px;
+    float: left;
+    margin-top: -20px;
+}
+
+.languages {
+    list-style-type: none;
+    color: #6d6257;
+    font-size: 10px;
+    text-align: right;
+
+}
+
+.languages li, .booking_online ul li {
+    display: inline;
+    margin: 0;
+    width: 38px;
+}
+
+.languages li span, .booking_online ul li span {
+    margin-left: 3px;
+}
+
+.languages li a, .booking_online ul li a {
+    display: inline;
+    font-weight: bold;
+    width: 38px;
+    color: #6d6257;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.languages li a:hover, .booking_online ul li a:hover {
+    font-weight: bold;
+    color: black;
+    background-color: #e5e0b8;
+}
+
+.languages li a img {
+    border: none;
+    margin-bottom: -1px;
+    padding-right: 3px;
+}
+
+/* ==============RECAPTCHA================*/
+.g-recaptcha {
+    margin-left: 95px;
+}
+
+/* ===================================================
+   ================BOTTOM ROW HEADER==================
+   ===================MENU and FLASH=====================*/
+
+.bottomrow {
+    width: 100%;
+    height: 344px;
+    margin-top: -20px;
+}
+
+ul#vertmenu {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 25px 25px 0 25px;
+    padding: 0px;
+    border: none;
+    width: 204px;
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*\*/
+* html ul#vertmenu {
+    margin: 25px 15px 0 15px;
+}
+
+/**/
+.flash {
+    float: left;
+    width: 558px;
+    height: 344px;
+    margin-top: -15px;
+}
+
+/*\*/
+* html .flash {
+    margin-top: 0;
+}
+
+/**/
+#TICKER {
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#TICKER span {
+    margin-right: 30px;
+}
+
+.soundplayer {
+    float: left;
+    width: 216px;
+    height: 60px;
+    margin: -26px 30px 0 25px;
+}
+
+/*\*/
+* html #TICKER {
+    width: 750px;
+}
+
+/**/
+h1.heading2 {
+    font-size: 12px;
+    font-style: italic;
+    margin: 0 0 5px 0;
+    padding: 0;
+    text-align: right;
+    margin-right: 5px;
+    color: #433d36;
+}
+
+h1.heading2 a {
+    text-decoration: none;
+    color: #433d36;
+}
+
+h1.heading2 a:hover {
+    background: #e5e0b8;
+}
+
+h1.heading2 em {
+    margin-right: 200px;
+}
+
+ul#vertmenu li {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#vertmenu li a {
+    font-size: 14px;
+    display: block;
+    border-bottom: 1px dashed #6d6257;
+    padding: 5px 0px 5px 10px;
+    text-decoration: none;
+    color: #433d36;
+    width: 204px;
+    width: 100%;
+}
+
+ul#vertmenu li a:hover, ul#vertmenu li a:focus, .current a {
+    background: #e5e0b8 url(/images/main_menu_bg.jpg) repeat-y top left;
+    width: 100%;
+    width: 204px;
+}
+
+.current a {
+}
+
+.signature {
+    float: right;
+    width: 50%;
+    text-align: right;
+    margin-top: -33px;
+}
+
+.signature img {
+    border-bottom: 1px dotted black;
+}
+
+.signature span {
+    color: #433d36;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* ===================================================
+   ================GALLERY==================
+   ========================================*/
+.gallery {
+    list-style: none;
+    margin: 0 0 0 45px;
+    padding: 0;
+}
+
+#last {
+    margin-bottom: -80px;
+}
+
+.gallery1 {
+    list-style: none;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+
+.gallery li, .gallery1 li {
+    padding: 15px 0 0 15px;
+    margin: 0 5px 0 0;
+    float: left;
+    width: 168px;
+    height: 135px;
+    background: url(/images/frame.png) no-repeat top left;
+}
+
+.gallery li {
+    position: relative;
+}
+
+.gallery img, .gallery1 img {
+    border: none;
+}
+
+.gallery em, .gallery1 em {
+    background: #e5e0b8;
+    color: #6d6257;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    padding: 2px 16px;
+    display: block;
+    position: absolute;
+    top: 96px;
+    left: 0;
+    font-size: 10px;
+}
+
+.gallery a, .gallery1 a {
+    text-decoration: none;
+    border: none;
+}
+
+.gallery a:hover em {
+    background: #6d6257;
+    color: #f1ecc2;
+}
+
+/* ===================================================
+   ================GALLERY==================
+   ========================================*/
+.gallery_ {
+    list-style: none;
+    margin: 0 0 0 55px;
+    padding: 0;
+}
+
+.gallery_ li {
+    margin: 15px 20px 0 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    width: 165px;
+    height: 132px;
+}
+
+.gallery_ a {
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+}
+
+.gallery_ a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.gallery_ img {
+    padding: 12px 0 0 10px;
+    border: none;
+}
+
+.gallery_ em {
+    width: 165px;
+    height: 20px;
+    background: url(/images/golden_frame.png) no-repeat;
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-family: Georgia, Times New Roman, Times, serif;
+    padding-top: 125px;
+}
+
+/* ===================================================
+   ================FOOTER==================
+   ========================================*/
+
+.footer {
+    display: block;
+    position: relative;
+    bottom: -38px;
+    margin: 0 9px 0 10px;
+    background: url(/images/footer_top_bg.png) no-repeat top left;
+    padding-top: 42px;
+}
+
+.downfooter {
+    background: url(/images/footer_bottom_bg.png) no-repeat bottom left;
+    padding-bottom: 43px;
+    /*position:relative;
+    bottom: 70px;*/
+}
+
+.mainfooter {
+    background: url(/images/footer_main_bg.png) repeat-y top left;
+    margin: 0;
+    width: 100%;
+}
+
+.mainfooter:after, .content:after, .box:after, .tab_container:after, .bottomrow:after, .gallery:after, .toprow:after, .contacts:after, .reservations:after, .main:after, .contacts:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.mainfooter, .content, .box, .tab_container, .bottomrow, .gallery, .toprow, .contacts, .reservations, .main, .contacts {
+    display: inline-block;
+}
+
+/* Hides from IE5/Mac \*/
+* html .mainfooter, * html .content, * html .box, * html .tab_container, * html .bottomrow. * html .gallery, * html .toprow, * html .contacts, * html .reservations, * html .main, * html .contacts {
+    height: 1px;
+}
+
+.mainfooter, .content, .box, .tab_container, .bottomrow, .gallery, .toprow, .contacts, .reservations, .main, .contacts {
+    display: block;
+}
+
+/* End hide from IE5/Mac */
+
+.weather {
+    margin: 0 0 0 30px;
+    float: left;
+}
+
+.footer_links {
+    float: left;
+}
+
+.footer_links h2.footerHeader {
+    margin: 0 0 10px 30px;
+    padding: 0;
+    color: #433d36;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.footer_links ul {
+    display: block;
+    list-style: none;
+    margin: 0 15px 0 25px;
+    padding: 0px;
+    border: none;
+    width: 170px;
+    float: left;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.footer_links ul li {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer_links ul li a {
+    font-size: 12px;
+    display: block;
+    border-bottom: 1px dashed #6d6257;
+    padding: 3px 0px 3px 10px;
+    text-decoration: none;
+    color: #6d6257;
+    width: 100%;
+}
+
+.footer_links ul li a:hover, .footer_links ul li a:focus {
+    color: #000000;
+    background-color: #dad2ae;
+    width: 100%;
+}
+
+.copyright {
+    float: right;
+    color: #6d6257;
+    font-size: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/* ===================================================
+   ================CONTENT==================
+   ========================================*/
+.content {
+}
+
+/* ===================================================
+   ================ABOUTUS==================
+   ========================================*/
+h1.heading1 {
+    font-weight: bold;
+    font-size: 14px;
+    font-style: italic;
+    color: #433d36;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 38px;
+    padding-bottom: 70px;
+    position: relative;
+    margin: 0;
+    top: -36px;
+    background-image: url(/images/heading1_bg.png);
+}
+
+#promoh {
+    top: -80px;
+}
+
+h2.subheader {
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+    color: #433d36;
+    margin: 10px 0 0 45px;
+    display: block;
+}
+
+.content .main {
+    position: relative;
+    top: -70px;
+    margin: 0 35px -20px 0;
+    color: #6d6257;
+}
+
+.main p, .bistro_text p {
+    color: #6d6257;
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 15px;
+    padding: 0;
+    margin: 10px 0 0 45px;
+}
+
+ul.promo, ul.list {
+    padding: 0;
+    color: #6d6257;
+    text-align: justify;
+    list-style-position: inside;
+}
+
+ul.promo li, ul.list li {
+    margin-bottom: 10px;
+}
+
+ul.promo {
+    margin: -100px 35px 10px 65px;
+}
+
+ul.list {
+    margin: 15px 35px 10px 65px
+}
+
+/* ===================================================
+  ================BISTRO==================
+  ========================================*/
+
+
+/* ==============Acordian===================*/
+#basic-accordian {
+    width: 100%;
+    margin-top: -50px;
+}
+
+.tab_container {
+    clear: right;
+}
+
+#test1-header, #test2-header, #test3-header {
+    width: 238px;
+    height: 75px;
+    padding: 6px;
+    border: 1px solid #d8d1ad;
+    cursor: pointer;
+    margin-left: 10px;
+    float: left;
+}
+
+#test1-header {
+    background: transparent url(/images/made_dish.jpg) no-repeat 6px 6px;
+    margin-left: 32px;
+}
+
+#test1-header:hover {
+    background: #d8d1ad url(/images/made_dish.jpg) no-repeat 6px 6px;
+}
+
+#test2-header {
+    background: url(/images/dessert.jpg) no-repeat 6px 6px;
+}
+
+#test2-header:hover {
+    background: #d8d1ad url(/images/dessert.jpg) no-repeat 6px 6px;
+}
+
+#test3-header {
+    background: url(/images/soft_drinks.jpg) no-repeat 6px 6px;
+}
+
+#test3-header:hover {
+    background: #d8d1ad url(/images/soft_drinks.jpg) no-repeat 6px 6px;
+}
+
+#test1-header h2, #test2-header h2, #test3-header h2 {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -24px;
+    width: 238px;
+    color: #433d36;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#test1-content, #test2-content, #test3-content {
+    margin: 0 auto 0 auto;
+    width: 600px;
+}
+
+.accordion_child {
+    width: 500px;
+}
+
+/* ==============Menu Bistro===================*/
+
+li.menuheader, li.subheader {
+    font-style: italic;
+    color: #433d36;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    text-align: left;
+    clear: both;
+}
+
+li.menuheader h2 {
+    padding: 10px 0 10px 0;
+    margin: 20px 0 0 0;
+    font-size: 12px;
+    clear: both;
+}
+
+li.menuheader ul li.subheader h3 {
+    padding: 10px 0 10px 0;
+    margin: 0;
+    font-size: 12px;
+    clear: both;
+}
+
+ul.menu_bistro, ul.menu_bistro li ul, ul.menu_bistro1, ul.menu_bistro1 li ul, ul.menu_bistro1 li ul li ul {
+    list-style-type: none;
+    font-weight: bold;
+    height: auto;
+    clear: both;
+}
+
+ul.menu_bistro li ul {
+    margin: 0;
+    padding-left: 30px;
+}
+
+ul.menu_bistro1 li ul {
+    margin: 0;
+    padding-left: 30px;
+}
+
+ul.menu_bistro1 li ul li ul {
+    margin: 0;
+    padding-left: 30px;
+}
+
+ul.menu_bistro li ul li, ul.menu_bistro1 li ul li ul li {
+    clear: both;
+    width: 100%;
+    border-bottom: 1px dotted black;
+    float: left;
+    color: #6d6257;
+}
+
+ul.menu_bistro li ul li span, ul.menu_bistro1 li ul li ul li span {
+    float: right;
+    color: #000;
+    margin-bottom: 0;
+    padding: 4px 0 0 4px;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: #6d6257;
+}
+
+ul.menu_bistro li ul li em, ul.menu_bistro1 li ul li ul li em {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+ul.menu_bistro li ul li p, ul.menu_bistro1 li ul li ul li p {
+    padding: 5px 0 5px 0;
+    margin: 0;
+    float: left;
+    padding-right: 4px;
+    width: 80%;
+}
+
+.bistro_text {
+    margin: 30px 45px 0 0;
+    text-align: left;
+}
+
+/* ===================================================
+  ================Local Attractions==================
+  ========================================*/
+
+/* ==============Acordian===================*/
+
+#local_attractions {
+    width: 748px;
+    margin: 0 0 0 45px;
+    display: block;
+    background: url(/images/attractions_top.png) no-repeat top left;
+    padding-top: 22px;
+    position: relative;
+    top: -80px;
+    margin-bottom: -80px;
+}
+
+.attraction_headings {
+    width: 748px;
+    height: 28px;
+    cursor: pointer;
+    font-weight: bold;
+    background: url(/images/attractions.png) left top no-repeat;
+    margin-top: -1px;
+    padding-left: 50px;
+}
+
+.attraction_headings h2 {
+    color: #433d36;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 28px;
+    margin: 0;
+}
+
+.attraction_headings:hover {
+    background: url(/images/attractions_hover.png) left top no-repeat;
+}
+
+.header1_highlight {
+    background: url(/images/attractions_active.png) left top no-repeat;
+}
+
+.header1_highlight h2 {
+    color: #f1ecc2;
+}
+
+.header1_highlight h2:hover {
+    color: #433d36;
+}
+
+.header1_highlight:hover {
+    background: url(/images/attractions_hover.png) left top no-repeat;
+}
+
+.attractions_child {
+    width: 748px;
+    padding: 10px 0 20px 0;
+    color: #6d6257;
+    background: #e5e0b8;
+}
+
+.attractions_child p {
+    padding: 0;
+    margin: 0 10px 0 10px;
+    text-indent: 20px;
+    font-size: 12px;
+    color: #6d6257;
+
+}
+
+.attractions_child a.links {
+    color: #433d36;
+    background: #e5e0b8;
+    padding: 3px;
+}
+
+.attractions_child a.links:hover {
+    background: #d6d1ab;
+}
+
+.attractions_images {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.attractions_images li {
+    margin: 20px;
+    padding: 0;
+    width: 132px;
+    height: 110px;
+}
+
+.attractions_images a {
+    text-decoration: none;
+    width: 108px;
+    height: 82px;
+    cursor: pointer;
+}
+
+.attractions_images a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.attractions_images img {
+    padding: 7px 0 0 9px;
+    border: none;
+    margin-top: -136px;
+    margin-left: 2px;
+    width: 109px;
+    height: 81px;
+}
+
+.attractions_images em {
+    width: 132px;
+    background: url(/images/gold_frame.png) no-repeat;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    padding-top: 103px;
+    color: black;
+}
+
+/* ===================================================
+   ================RESERVATIONS==================
+   ========================================*/
+h5.reserve_now {
+    behavior: url("/css/csshover.htc");
+    float: right;
+    font-size: 12px;
+    background: transparent url(/images/reserve_but_h.png) no-repeat;
+    width: 198px;
+    height: 74px;
+    margin: -10px 35px 0 0;
+    text-align: center;
+    padding: 29px 0 0 0;
+    font-style: italic;
+    color: #433d36;
+    clear: both;
+}
+
+h5.reserve_now:hover {
+    background: transparent url(/images/reserve_but.png) no-repeat;
+}
+
+h5.reserve_now a {
+    text-decoration: none;
+    color: #433d36;
+}
+
+.error {
+    color: red;
+}
+
+.reservations {
+    margin-top: -60px;
+}
+
+.contacts {
+    margin-top: -20px;
+}
+
+.reservations fieldset {
+    border: 1px solid #ded9b2;
+}
+
+.reservations p {
+    margin: 5px;
+    padding: 0;
+    clear: right;
+}
+
+.reservations fieldset legend span, .reservations fieldset.payment legend span, .contacts fieldset legend span {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: #433d36;
+    background: transparent url(/images/legend_bg.png) no-repeat;
+    width: 356px;
+    height: 25px;
+    padding: 5px 0 0 10px;
+}
+
+.reservations fieldset.left {
+    width: 370px;
+    float: left;
+    margin-left: 25px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.reservations fieldset.right {
+    margin-right: 25px;
+}
+
+.reservations fieldset.payment {
+    margin: 25px 25px 25px 0;
+}
+
+.reservations fieldset.left label, .reservations fieldset.right label, .contacts fieldset.mail label {
+    float: left;
+    text-align: right;
+    margin: 0;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: #6d6257;
+}
+
+.reservations fieldset.payment label {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: #6d6257;
+}
+
+.reservations fieldset.left label {
+    width: 168px;
+}
+
+.reservations fieldset.right label {
+    width: 110px;
+}
+
+.reservations fieldset.left input {
+    width: 121px;
+    height: 17px;
+    border: 1px solid #f1ecc2;
+    padding: 4px;
+    background: transparent url(/images/input1_bg.png) no-repeat right bottom;
+    float: left;
+    margin-bottom: 4px;
+}
+
+.reservations fieldset.right input, .contacts fieldset input {
+    width: 224px;
+    height: 17px;
+    padding: 4px;
+    background: transparent url(/images/input_personal_bg.png) no-repeat right bottom;
+    border: 1px solid #f1ecc2;
+}
+
+.reservations fieldset.left input.readonly {
+    background: transparent url(/images/input_readonly_bg.png) no-repeat right bottom;
+    cursor: default;
+}
+
+.reservations fieldset.left input:focus, .reservations fieldset.right input:focus, .reservations textarea#more_info:focus {
+    border: 1px solid #817f70;
+}
+
+.reservations .title, .reservations fieldset.left label.radio {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #433d36;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.reservations fieldset.left label.radio {
+    text-align: left;
+}
+
+.reservations fieldset.left label.radio input {
+    width: 20px;
+    background: none;
+}
+
+.reservations textarea#more_info, .contacts fieldset textarea {
+    width: 224px;
+    height: 112px;
+    background: url(/images/textarea_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    overflow: auto;
+    border: 1px solid #f1ecc2;
+    padding: 4px;
+}
+
+select#room {
+    width: 132px;
+    border: 1px solid #e5e0b8;
+    padding: 4px;
+    overflow: auto;
+    margin: 0 0 10px 5px;
+    background: #e5e0b8;
+}
+
+select#room option {
+    background: #e5e0b8;
+    border: none;
+    font-size: 12px;
+    color: #6d6257;
+    font-weight: bold;
+}
+
+select#room option:hover {
+    background: #6d6257;
+}
+
+.imageform {
+    padding: 15px 0 0 15px;
+    margin: 5px;
+    position: relative;
+    float: left;
+    clear: left;
+    width: 168px;
+    height: 135px;
+    background: url(/images/frame.png) no-repeat top left;
+}
+
+.imageform img {
+}
+
+.submit, .send {
+    background: url(/images/submit.jpg) no-repeat top left;
+    cursor: pointer;
+    width: 112px;
+    height: 26px;
+    border: none;
+    padding-bottom: 5px;
+    line-height: 26px;
+    margin-right: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #f1ecc2;
+}
+
+.submit {
+    float: right;
+}
+
+#send {
+    width: 50%;
+    text-align: right;
+}
+
+.send {
+    margin-top: 10px;
+}
+
+.confirm {
+    font-weight: bold;
+    font-family: Verdana;
+}
+
+/* ===================================================
+   ================CONTACTS==================
+   ========================================*/
+.address {
+    background: url(/images/contacts_bg.png) no-repeat top left;
+    color: #f1ecc2;
+    width: 745px;
+    height: 160px;
+    margin: -60px 25px 0 35px;
+    padding: 20px 15px 15px 15px;
+    #padding: 30px 15px 15px 15px;
+    font-family: Verdana, Arial, Helvetica;
+    line-height: 18px;
+}
+
+.address div {
+    float: left;
+}
+
+.address h2.addressLogo, .address h2.contactName {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.manager_image {
+    width: 49%;
+    text-align: right;
+    #margin-top: 10px;
+}
+
+.address h2.contactName {
+    float: right;
+    margin-right: 25px;
+}
+
+.address p {
+    font-size: 11px;
+}
+
+.contacts fieldset {
+    margin-left: 35px;
+    border: 1px solid #ded9b2;
+    padding-bottom: 5px;
+}
+
+.contacts fieldset.mail {
+    float: left;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.contacts fieldset.mail label {
+    width: 121px;
+}
+
+.contacts fieldset.map {
+    margin-right: 25px;
+}
+
+.contacts fieldset.map #map {
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+/* ===================================================
+   ================PRICES==================
+   ========================================*/
+.prices {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #6d6257;
+    margin: 10px auto;
+    padding: 5px;
+    background: #e5e0b8;
+    width: 700px;
+}
+
+.prices td, .prices tr {
+    padding: 5px;
+    background: #f1ecc2;
+}
+
+.prices_header {
+    background: #e5e0b8;
+}
+
+.prices_header h2.pricetitle {
+    font-family: Georgia, Times New Roman, Times, serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    padding: 5px;
+    margin: 0;
+    color: #433d36;
+    display: inline;
+    width: 600px;
+}
+
+.prices_header a {
+    border: none;
+    margin-left: 10px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.prices_header img {
+    border: none;
+    margin-bottom: -1px;
+}
+
+.period {
+    font-weight: bold;
+    width: auto;
+    font-size: 11px;
+}
+
+.rightSide {
+    position: absolute !important;
+    right: -110px;
+}
+
+.thum_img {
+    width: 136px !important;
+    height: 102px !important;
+}

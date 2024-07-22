@@ -1,0 +1,635 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <meta name="keywords" xml:lang="bg" content=
+        "хотел, хотел Поморие, хотели, хотели Поморие, хотели Поморие изгодно, hoteli Pomorie, море, pomorie hoteli, почивка в Поморие, вила на морето "/>
+    <meta name="keywords" xml:lang="en" content=
+        "hotel, hotels, pomorie hotels, pomorie beach, resort pomorie, pomorie bg, hotels Black Sea, motels, cheap hotels Black Sea, cheap motels Black Sea, cheap hotels Pomorie, cheap beach, budget hotels Black Sea, beach hotels Bulgaria, beach hotel holiday, beach apartments, beach bed, beach holiday, beach holidays"/>
+    <meta name="description" xml:lang="bg"
+          content="Вашата мечтана морска почивка в Поморие! Най-доброто за Вас на най-добрата цена!"/>
+    <meta name="description" xml:lang="en"
+          content="Your dream Black sea holiday in Pomorie close 50m from the beach. The BEST for you, on a BEST PRICE!"/>
+    <meta name="robots" content="index, follow, all"/>
+    <meta name="revisit-after" content="7 days"/>
+    <meta name="distribution" content="Global"/>
+    <meta name="author" content="Maria Serafimova- design and Radoslav Radev - programming"/>
+    <meta name="verify-v1" content="rVepv5iOlpkEut5PWhmLx+Dg+i3nVAkD21XMa6zoRbM="/>
+    <title>Viva Beach - family beach hotel in Pomorie, Bulgaria</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/booking_online.css"/>
+
+    <script type="text/javascript" src="/javascript/iepngfix_tilebg.js"></script>
+    <!--[if lte IE 6]>
+    <style type="text/css">
+        img, .outerbox, .innerbox, .box, .logo, ul#vertmenu li a:hover, ul#vertmenu li a:focus, .current a, .gallery li, .gallery1 li, .footer, .downfooter, .mainfooter, .heading1, .heading2, #local_attractions, .attraction_headings, .attraction_headings:hover, .header1_highlight, .attractions_images em, .reservations fieldset legend span, .reservations fieldset.payment legend span, .contacts fieldset legend span, .reservations fieldset.left input, .reservations fieldset.right input, .contacts fieldset input, .reservations fieldset.left input.readonly, .reservations textarea#more_info, .contacts fieldset textarea, .imageform, .address {
+            behavior: url(javascript/iepngfix.htc)
+        }
+    </style>
+    <![endif]-->
+    <script type="text/javascript" src="/javascript/fbparam.js"></script>
+    <script type="text/javascript" src="/javascript/fblib.js"></script>
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/jquery.lightbox-0.5.css" media="screen"/>
+    <!-- Lightbox JavaScript -->
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/javascript/jquery.lightbox-0.5.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('a.lightbox').lightBox(); // Select all links with lightbox class
+        });
+    </script>
+    <script type="text/javascript">
+        function validateEmail(value) {
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return filter.test(value);
+        }
+
+        function validateSendFriendForm() {
+            var result = true;
+            var txtFriendName = document.getElementsByName('txtFriendName')[0];
+            var lblFriendName = document.getElementById('lblFriendName');
+            if (txtFriendName.value != '') {
+                lblFriendName.style.color = '';
+                lblFriendName.firstChild.data = 'Вашето име:';
+            } else {
+                lblFriendName.style.color = 'red';
+                lblFriendName.firstChild.data = 'Моля въведете име!';
+                result = false;
+            }
+            var txtFriendEmail = document.getElementsByName('txtFriendEmail')[0];
+            var lblFriendEmail = document.getElementById('lblFriendEmail');
+            if (txtFriendEmail.value != '') {
+                if (validateEmail(txtFriendEmail.value)) {
+                    lblFriendEmail.style.color = '';
+                    lblFriendEmail.firstChild.data = 'e-mail на приятел:';
+                } else {
+                    lblFriendEmail.style.color = 'red';
+                    lblFriendEmail.firstChild.data = 'Моля въведете валиден e-mail адрес!';
+                    result = false;
+                }
+            } else {
+                lblFriendEmail.style.color = 'red';
+                lblFriendEmail.firstChild.data = 'Моля въведете e-mail!';
+                result = false;
+            }
+            return result;
+        }
+    </script>
+    <!-- SIFR -->
+    <link rel="stylesheet" href="/css/sifr.css" type="text/css"/>
+    <script src="/javascript/sifr.js" type="text/javascript"></script>
+    <script src="/javascript/sifr-config.js" type="text/javascript"></script>
+    <!-- RESERVATION_FORM -->
+    <script language="javascript" type="text/javascript" src="/javascript/fblib.js"></script>
+    <script language="javascript" type="text/javascript" src="/javascript/fbparam.js"></script>
+</head>
+<body onload="begin();">
+<div class="outerbox">
+    <div class="innerbox">
+        <div class="box">
+            <!-- ================================================================
+                   =============================HEADER=============================
+                 ================================================================-->
+            <div class="toprow">
+                <h1 class="logo"><span>Viva Beach hotel</span></h1>
+                <div class="headerright">
+                    <ul class="languages">
+                        <li><a href="/landmarks.html"><img src="/images/flags/bg.gif" alt=""/>BG</a>
+                            <span>|</span></li>
+                        <li><a href="/english/landmarks.html"><img src="/images/flags/en.gif" alt=""/>EN</a></li>
+                    </ul>
+                </div><!-- end of header right div -->
+            </div>  <!-- end of top row div -->
+            <div class="bottomrow">
+                <ul id="vertmenu">
+                    <li>
+                        <a href="/english">Home</a>
+                    </li>
+                    <li>
+                        <a href="/english/about.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="/english/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="/english/bistro.html">Bistro</a>
+                    </li>
+                    <li>
+                        <a href="/english/prices.html">Price-list</a>
+                    </li>
+                    <li>
+                        <a href="/english/contacts.html">Contact us</a>
+                    </li>
+                    <li class="current">
+                        <a href="/english/landmarks.html">Local attractions</a>
+                    </li>
+                    <li>
+                        <a href="/english/services.html">Additional services</a>
+                    </li>
+                    <li>
+                        <a href="/english/booking.html">Booking</a>
+                    </li>
+                    <li>
+                        <a href="/english/recommendations.html">Recommendations</a>
+                    </li>
+
+                </ul>
+                <div class="flash">
+                    <h1 class="heading2"><em>Family hotel Viva Beach</em> <a href="">www.vivabeachhotels.com</a></h1>
+                    <object type="application/x-shockwave-flash" data="" width="557" height="340"
+                            title="header" tabindex="0">
+                        <param name="wmode" value="transparent"/>
+                        <param name="allowFullScreen" value="false"/>
+                        <param name="movie" value="header.swf"/>
+                        <param name="quality" value="high"/>
+                        <img src="/images/flash.png" alt="Pomorie"/>
+                    </object>
+                </div>
+            </div><!-- end of bottomrow div -->
+            <div id="TICKER" onmouseover="TICKER_PAUSED=true" onmouseout="TICKER_PAUSED=false">
+                <span style="font-family:Arial,serif; font-size:12px; color:#444444" id="TICKER_BODY" width="100%">
+				    <span>Children up to 2 years old are free of charge.</span>
+                    <span>Children from 2 to 12 years, on extra bed pay 50% of the price.</span>
+                    <span>Children from 2 to 12 years, on regular bed have 30% discount.</span>
+                    <span>Adult on extra bed has 20% discount of the price for a regular bed.</span>
+                    <span>Additional discounts for bigger groups, or longer stay, may be specified at the hotel with the manager.</span>
+                    <span>5% discount for loyal clients!</span>
+                    <span>BIG SAVINGS!!! Welcome to Viva Beach Hotel! \"Early Birds\" 2015 offer! Enjoy your holiday at Black sea coast in VIVA BEACH hotel Pomorie for only 18.00 euro per person per night with breakfast&amp;dinner(HB). Extended packages are available - B&amp;B, HB+, FB, massages&amp;relaxing therapies. Take it before it finish! (Cansellation or change of reservation is not available, no refund) Ask for our special winter 2014/15 offers. We can organise your family or business parties!</span>
+				</span>
+            </div>
+            <script type="text/javascript" src="/javascript/webticker_lib.js" language="javascript"></script>
+        </div><!-- end of box div -->
+    </div><!-- end of inner box div -->
+</div> <!-- end of outer div -->
+<div class="outerbox">
+    <div class="innerbox">
+        <div class="box">
+            <!-- ================================================================
+                   ==================================CONTENT=======================
+                 ================================================================ -->
+            <div class="content">
+                <script type="text/javascript" src="/javascript/accordian.pack.js"></script>
+                <h1 class="heading1">Local Attractions</h1>
+                <div class="main" style="margin-bottom: 15px;">
+                </div>
+                <div id="local_attractions"><!--Parent of the Accordion-->
+                    <!--Start of each accordion item-->
+                    <div id="attractions-header" class="attraction_headings"><h2>Pomorie Town</h2></div>
+                    <!--Heading of the accordion ( clicked to show n hide ) -->
+
+                    <!--Prefix of heading (the DIV above this) and content (the DIV below this) to be same... eg. foo-header & foo-content-->
+                    <div id="attractions-content" class="attraction-content" style="display: none; overflow: hidden;">
+                        <!--DIV which show/hide on click of header-->
+                        <!--This DIV is for inline styling like padding...-->
+                        <div class="attractions_child">
+                            <ul class="gallery1">
+                                <li><a href="/images/local_attractions/pomorie_beach.jpg" title="Pomorie Town"
+                                       class="lightbox" target="_blank"><img
+                                    src="/images/local_attractions/th/pomorie_beach_th.jpg" alt="Pomorie Town"></a></li>
+                                <li><a href="/images/local_attractions/pomorie_city.jpg" title="Pomorie Town"
+                                       class="lightbox" target="_blank"><img
+                                    src="/images/local_attractions/th/pomorie_city_th.jpg" alt="Pomorie Town"></a></li>
+                                <li><a href="/images/local_attractions/pomorie_night.jpg" title="Pomorie Town"
+                                       class="lightbox" target="_blank"><img
+                                    src="/images/local_attractions/th/pomorie_night_th.jpg" alt="Pomorie Town"></a></li>
+                            </ul>
+                            <div style="clear: both;">
+                                <p>The health resort Pomorie town is located at 18 km. south of <a
+                                    href="https://www.visit.bg/sommer/index.php?kurid=9" class="links" target="_blank">Nessebar</a>,
+                                    18 km. northeast of <a href="https://www.visit.bg/sommer/index.php?kurid=34"
+                                                           class="links" target="_blank">Bourgas</a>, and 408 km. east
+                                    of <a href="https://www.visit.bg/staedte/index.php?kurid=63" class="links"
+                                          target="_blank">Sofia</a>. Its population is 14 500 people. It is situated on
+                                    a narrow and rocky peninsula. It’s founded during the 5th century BC. Pomorie is an
+                                    ancient town, well known with its old name Anhialo. Anhialo has been a colony of the
+                                    antique town Apolonia (present-day Sozopol), and it’s been destroyed and restored
+                                    many times. Even then the salt extraction and the wine production have been
+                                    developed. Pomorie was famous with its mud-curing lagoon. During 13-14 centuries the
+                                    town was a big harbor, whereof wool, wheat, beeswax, honey and wine was exported
+                                    abroad. During the Ottoman rule the town has retained its importance of a big
+                                    coastal center. In 1906, a conflagration nearly destroyed the old town, except the
+                                    few antique houses on the east part. In 1899-1900, in the town has lived and worked
+                                    the famous Bulgarian poet Peyo Yavorov. Here he has written his best works. There is
+                                    a monument of him near the sea coast, at the place he used to relax.</p>
+                                <p>Today Pomorie is one of the most beautiful sea towns. The coastal line is wide and
+                                    covered with fine sand, at some places nearly black. Our coastal line has the
+                                    ecological reward “Blue Flag”. The beautiful houses and all the private hotels give
+                                    an opportunity of valuable vacation. The coastal avenues are favorite place for
+                                    walks and rest of the tourists.</p>
+                                <p>Pomorie is well known as a center for health tourism, because of the sanatorium, that
+                                    is operating all around the year. There the mud from the Pomorie Lake, rich in
+                                    iodine and minerals, is used for treatment of rheumatic and neural troubles. </p>
+                                <p>The production of red and white wines, as well as vermouths, special brandies and
+                                    cognacs, has gained recognition and distinction at popular international
+                                    competitions and exhibitions. </p>
+                                <p>The traditional Days of Yavorov, taking place in Pomorie, are famous event in the
+                                    summer. Very interesting and memorable places for our tourists are: the Monastery
+                                    “St. George” from 1856; the Orthodox Churches “Christ”, “The Transfiguration of
+                                    Christ”, and “Virgin Mary.” Near the Camping site “Europe” was opened a beehive
+                                    tomb. Its height is 8 m. and its diameter is 60 m. It originates from 3th century,
+                                    and it’s an original combination between a typical, Thracian beehive tomb and a
+                                    Roman mausoleum. It is interesting for its construction, as it consists of a tunnel
+                                    leading to round camera. The beehive tomb is open to visitors.</p>
+                                <p>There is a regular bus line to and from the town. </p>
+                                <p>Possibilities for short trips to: <a
+                                    href="https://www.visit.bg/sommer/index.php?kurid=9" class="links" target="_blank">Nesebar</a>,
+                                    <a href="https://www.visit.bg/index.php?topic=sehenswuerdigkeiten&amp;ortinfo=ropotamo"
+                                       class="links" target="_blank">Ropotamo River</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End of each accordion item-->
+
+                    <!--Start of each accordion item-->
+                    <div id="attractions1-header" class="attraction_headings"><h2>Salt Museum</h2></div>
+                    <!--Heading of the accordion ( clicked to show n hide ) -->
+
+                    <!--Prefix of heading (the DIV above this) and content (the DIV below this) to be same... eg. foo-header & foo-content-->
+                    <div id="attractions1-content" class="attraction-content" style="display: none; overflow: hidden;">
+                        <!--DIV which show/hide on click of header-->
+
+                        <!--This DIV is for inline styling like padding...-->
+                        <div class="attractions_child">
+                            <ul class="gallery1">
+                                <li><a href="/images/local_attractions/muzeum_salt.jpg" title="Salt Museum"
+                                       class="lightbox" target="_blank"><img
+                                    src="/images/local_attractions/th/muzeum_salt_th.jpg" alt="Salt Museum"></a></li>
+                            </ul>
+                            <p>One of the most interesting, contemporary attractions is the unique Museum in Bulgaria
+                                and East Europe for production of salt, by the sun exhalation of sea water.</p>
+                            <p>The Museum shows the ancient Anhialo method for production of sea salt. It contains an
+                                exposition hall, and 20 decares operative salterns. In the Museum there are unique
+                                photographs from the beginning of the last century, presenting the development of the
+                                salt production in the region, old topographic maps, miniature models and ancient tools
+                                and equipment for salt production.</p>
+                            <p>The visitors could see “in real” all the technological operations, to communicate with
+                                the producers about the fine details of this profession.
+                                The Salt Museum is open from 10 to 6 PM during the week. A day off is Sunday. The Phone
+                                number is 0596 / 2 53 44.</p>
+                        </div>
+                    </div>
+                    <!--End of each accordion item-->
+
+                    <!--Start of each accordion item-->
+                    <div id="attractions2-header" class="attraction_headings"><h2>The Pomorie Lake</h2></div>
+                    <!--Heading of the accordion ( clicked to show n hide ) -->
+
+                    <!--Prefix of heading (the DIV above this) and content (the DIV below this) to be same... eg. foo-header & foo-content-->
+                    <div id="attractions2-content" class="attraction-content" style="display: none; overflow: hidden;">
+                        <!--DIV which show/hide on click of header-->
+
+                        <!--This DIV is for inline styling like padding...-->
+                        <div class="attractions_child">
+                            <ul class="gallery1">
+                                <li><a href="/images/local_attractions/pomoriisko_soleno_ezero.jpg"
+                                       title="The Pomorie Lake" class="lightbox" target="_blank"><img
+                                    src="/images/local_attractions/th/pomoriisko_soleno_ezero_th.jpg"
+                                    alt="The Pomorie Lake"></a></li>
+                            </ul>
+                            <p>The Lake is ultrasaline natural lagoon. It is located in the immediate proximity of the
+                                town Pomorie. It’s divided from the sea by a narrow strip of sand and artificial
+                                dike. </p>
+                            <p>On the south there is a channel, which connects it with the Black Sea. It has an
+                                elongated shape with a length 6,7 km and width 1.8-2 km. </p>
+                            <p>Sea salt is obtained in the north part, and curative mud in the south.</p>
+                            <p>The firth curative mud here is among the best in the world. It is advantageous for the
+                                backbone motor system, skin troubles, peripheral nervous system troubles, etc.</p>
+                            <p>The Pomorie Lake is a protected ecological area since 2001. The Lake is well known with
+                                its flora and fauna, spectacular for all tourists in the town. Located on the Via
+                                Pontica bird migration route, it is thus of ornithological importance. The lake is
+                                inhabited by 215 species of birds like the Pied Avocet, the Little Tern, the Kentish
+                                Plover, etc. </p>
+                            <p>The mud-cure and the modern rehabilitation bases make the town a whole year round
+                                resort. </p>
+                        </div>
+                    </div>
+                    <!--End of each accordion item-->
+
+                    <!--Start of each accordion item-->
+                    <div id="attractions3-header" class="attraction_headings"><h2>The Antique Dump Tomb</h2></div>
+                    <!--Heading of the accordion ( clicked to show n hide ) -->
+
+                    <!--Prefix of heading (the DIV above this) and content (the DIV below this) to be same... eg. foo-header & foo-content-->
+                    <div id="attractions3-content" class="attraction-content" style="display: none; overflow: hidden;">
+                        <!--DIV which show/hide on click of header-->
+
+                        <!--This DIV is for inline styling like padding...-->
+                        <div class="attractions_child">
+                            <ul class="gallery1">
+                                <li><a href="/images/local_attractions/antichna_kupolna_grobnica.jpg"
+                                       title="The Antique Dump Tomb" class="lightbox" target="_blank"><img
+                                    src="/images/local_attractions/th/antichna_kupolna_grobnica_th.jpg"
+                                    alt="The Antique Dump Tomb"></a></li>
+                            </ul>
+                            <p>At 4 km. on the west of Pomorie is situated an unique dump tomb, originated from the
+                                beginning of IV century A.C.</p>
+                            <p>This place was called a necropolis - the town of the death. The tomb was found in 1888,
+                                and it represents an ingenious old outfit, unique on the Balkan Peninsula. In 1959, the
+                                Beehive tomb was renovated and open for visitors. It is recognized as a National
+                                Monument of Bulgarian Culture, and receives lots of guests and experts from Europe, USA
+                                and Japan. </p>
+                            <p>According its tectonic elaboration, the tomb represents a combination between the
+                                Thracian custom of burial under a mound, and the burial in a mausoleum to the custom of
+                                the Romans. </p>
+                            <p>The furrow on the stony threshold at the entrance of the dromos, formed through the
+                                continuous door opening and closing, leads the experts to the conclusion that this is
+                                not just a regular tomb, but a mausoleum wherein religious ceremonies have been
+                                constantly performed. </p>
+                            <p>There was found a sarcophagus into another necropolis, 10 m. away from the tomb. Around
+                                the Antique Dump Tomb there have been raised up lots of mounds, where the
+                                representatives of the high Anhialo – Thracian aristocracy have been buried. </p>
+                        </div>
+                    </div>
+                    <!--End of each accordion item-->
+
+                    <!--Start of each accordion item-->
+                    <div id="attractions4-header" class="attraction_headings"><h2>Historical Museum </h2></div>
+                    <!--Heading of the accordion ( clicked to show n hide ) -->
+
+                    <!--Prefix of heading (the DIV above this) and content (the DIV below this) to be same... eg. foo-header & foo-content-->
+                    <div id="attractions4-content" class="attraction-content" style="display: none; overflow: hidden;">
+                        <!--DIV which show/hide on click of header-->
+
+                        <!--This DIV is for inline styling like padding...-->
+                        <div class="attractions_child">
+                            <ul class="gallery1">
+                                <li><a href="/images/local_attractions/istoricheskimuzei.jpg" title="Historical Museum "
+                                       class="lightbox" target="_blank"><img
+                                    src="/images/local_attractions/th/istoricheskimuzei_th.jpg" alt="Historical Museum "></a>
+                                </li>
+                            </ul>
+                            <p>In the collection of the Historical Museum in Pomorie the life of the people is retraced
+                                from hoary antiquity till XIV century when the Turkish have occupied the area. The
+                                Museum is recognized to be a monument of the national culture. The building has been
+                                reconstructed again, after being burned as a secondary school for girls once.</p>
+                            <p>The Roman and the medieval period from the Anhialo history are displayed by road maps of
+                                the region; there are lots of coins, ornate with marbled architectural fragments from
+                                the ancient town. </p>
+                            <p>Here is the address of the Historical Museum: “Knjaz Boris I” street, №33A. The telephone
+                                number is 0596 / 2 20 08. Working time from 10 to 12 AM, from 4 to 8 PM.</p>
+                        </div>
+                    </div>
+                    <!--End of each accordion item-->
+
+                    <!--Start of each accordion item-->
+                    <div id="attractions6-header" class="attraction_headings"><h2>Ortodox Church “Lord’s
+                        Transfiguration”</h2></div>
+                    <!--Heading of the accordion ( clicked to show n hide ) -->
+
+                    <!--Prefix of heading (the DIV above this) and content (the DIV below this) to be same... eg. foo-header & foo-content-->
+                    <div id="attractions6-content" class="attraction-content" style="display: none; overflow: hidden;">
+                        <!--DIV which show/hide on click of header-->
+
+                        <!--This DIV is for inline styling like padding...-->
+                        <div class="attractions_child">
+                            <ul class="gallery1">
+                                <li><a href="/images/local_attractions/preobragenie_gospodne2.jpg"
+                                       title="Ortodox Church “Lord’s Transfiguration”" class="lightbox" target="_blank"><img
+                                    src="/images/local_attractions/th/preobragenie_gospodne2_th.jpg"
+                                    alt="Ortodox Church “Lord’s Transfiguration”"></a></li>
+                            </ul>
+                            <p>This is the oldest building in the town of Pomorie, built in 1763-64, completed and
+                                sanctified in 1765. It was built on the emplacement of a smaller temple that had existed
+                                since IX century and destroyed in 1760.</p>
+                            <p>The church"s massive rectangular building is composed of three naves with wooden
+                                ceilings. There are no external domes and interior arches. The altar apse to the east is
+                                missing and covered by a two hip roof. Two windows - to the north and south. Two gates -
+                                the southern one bigger than the western one. The church is built entirely of
+                                stone. </p>
+                            <p>The inside is decorated with icons and wood carved iconostasis with floral motives. The
+                                fretwork is of very high artiastic and technical level. 17 large icons of the king"s row
+                                by different icon painters from XVII and XVIII century are placed on the iconostasis.
+                                Some icons originate even from the XVI century. On the second apostolic row there are 33
+                                small icons - apostolis, festal and saints. Under the king"s icon of Jesus Christ, in
+                                the foundations, there is a small holy spring with holy water, appearing from a stone
+                                slab of 20-25cm thichness. The spring was named by the Christians "Tears of Jesus". </p>
+                            <p>The original architectural design of the church missing altar apse to the east, and the
+                                rich interior decoration makes it unique for the whole Christian world. In 1972 the
+                                church has been explored and listed as an original monument of fine art, and in 1976 has
+                                been reckognized as Monument of culture of national significance.</p>
+                        </div>
+                    </div>
+                    <!--End of each accordion item-->
+
+                    <!--Start of each accordion item-->
+                    <div id="attractions7-header" class="attraction_headings"><h2>Ortodox Church “Rojdenie Na Presveta
+                        Bogoroditsa”</h2></div>
+                    <!--Heading of the accordion ( clicked to show n hide ) -->
+
+                    <!--Prefix of heading (the DIV above this) and content (the DIV below this) to be same... eg. foo-header & foo-content-->
+                    <div id="attractions7-content" class="attraction-content" style="display: none; overflow: hidden;">
+                        <!--DIV which show/hide on click of header-->
+
+                        <!--This DIV is for inline styling like padding...-->
+                        <div class="attractions_child">
+                            <ul class="gallery1">
+                                <li><a href="/images/local_attractions/tcarkva_sv_rojd_bog1.jpg"
+                                       title="Ortodox Church “Rojdenie Na Presveta Bogoroditsa”" class="lightbox"
+                                       target="_blank"><img
+                                    src="/images/local_attractions/th/tcarkva_sv_rojd_bog1_th.jpg"
+                                    alt="Ortodox Church “Rojdenie Na Presveta Bogoroditsa”"></a></li>
+                            </ul>
+                            <p>The Church was built in honor to the birth of Virgin Mary, and the Holy and
+                                Life-asserting Trinity in 1890 from the grand-master Gencho Kanev. Because of his death
+                                some of the elements in the church have left uncompleted. It has been intended to be a
+                                central domed building.</p>
+                            <p>In 1891, the Church was sanctified by the Metropolitan Gevrasii from the town of Sliven.
+                                Perhaps during the time of sanctification the iconostasis has been a piece of joinery.
+                            </p>
+                            <p>In 1909 – 1911 two more aisles have been added inside, the holy gates were removed by an
+                                older iconostasis, the icons are copies of Russian icons.</p>
+                            <p>In 1959 the Church was wholly renovated. The mural paintings have been made by the
+                                artists N.Rostovtsev, K.Jordanov and A.Sorokin in the spirit of classical iconography.
+                                The iconostasis was changed with a fretwork made by K.Kosharevski. </p>
+                        </div>
+                    </div>
+                    <!--End of each accordion item-->
+
+                    <!--Start of each accordion item-->
+                    <div id="attractions8-header" class="attraction_headings"><h2>The Temple Of Izida And Sarapis</h2>
+                    </div>
+                    <!--Heading of the accordion ( clicked to show n hide ) -->
+
+                    <!--Prefix of heading (the DIV above this) and content (the DIV below this) to be same... eg. foo-header & foo-content-->
+                    <div id="attractions8-content" class="attraction-content" style="display: none; overflow: hidden;">
+                        <!--DIV which show/hide on click of header-->
+
+                        <!--This DIV is for inline styling like padding...-->
+                        <div class="attractions_child">
+                            <ul class="gallery1">
+                                <li><a href="/images/local_attractions/Izida.jpg" title="The Temple Of Izida And Sarapis"
+                                       class="lightbox" target="_blank"><img
+                                    src="/images/local_attractions/th/Izida_th.jpg"
+                                    alt="The Temple Of Izida And Sarapis"></a></li>
+                            </ul>
+                            <p>A group of archeologists have found remains from an ancient temple dedicated to the cult
+                                of Izida, in the area called “Paleocastro” in Pomorie. The temple dates as far back as
+                                in the middle of second century AD. </p>
+                            <p>The cult had imbued in the Balkans along the west coast of the Black Sea during the rule
+                                time of Alexsander Makedonski’s heirs. There are famous monuments from that time – from
+                                Tomis (present day Constantsa), and Mesembria (present day Nessebar). </p>
+                            <p>Sarapis was considered a conqueror, according to Sergei Torbatov, the director of
+                                excavations. Recently the archeologists have found an old building, claiming that this
+                                is a part from the Temple of Izida and Sarapis.</p>
+                            <p>Among the ruins there were found coins and things considered to have magical power by the
+                                ancient people. According to the archeologists the Temple of the Egyptian goddess was
+                                built upon another, older sanctuary of the Thracian pagan gods. This still needs to be
+                                investigated. </p>
+                        </div>
+                    </div>
+                    <!--End of each accordion item-->
+
+                    <!--Start of each accordion item-->
+                    <div id="attractions5-header" class="attraction_headings header1_highlight"><h2>Pomorie Monastery
+                        “St. George-The Victorious”</h2></div>
+                    <!--Heading of the accordion ( clicked to show n hide ) -->
+
+                    <!--Prefix of heading (the DIV above this) and content (the DIV below this) to be same... eg. foo-header & foo-content-->
+                    <div id="attractions5-content" class="attraction-content" style="display: block; overflow: hidden; height: 165px; opacity: 1;">
+                        <!--DIV which show/hide on click of header-->
+
+                        <!--This DIV is for inline styling like padding...-->
+                        <div class="attractions_child">
+                            <ul class="gallery1">
+                                <li><a href="/images/local_attractions/MonasterStGeorge1.jpg"
+                                       title="Pomorie Monastery “St. George-The Victorious”" target="_blank"
+                                       class="lightbox"><img src="/images/local_attractions/th/MonasterStGeorge1_th.jpg"
+                                                             alt="Pomorie Monastery “St. George-The Victorious”"></a>
+                                </li>
+                            </ul>
+                            <p>Pomorie Monastery St.George is situated in the new part in the town of Pomorie. This is
+                                the only functioning men’s monastery in the southern part of Bulgaria along the Black
+                                Sea coast.</p>
+                            <p>There is a marble bar-relief from II-III century AD with image of a Thracian horseman
+                                that shows this place had been a Thracian sanctuary once. </p>
+                            <p>The legend tells that during VII century AD the Monastery had already come to existence,
+                                by the name of St. George. </p>
+                            <p>At the Monastery today there are lots of valuable patterns of the iconography art from
+                                XVIII and XIX century. The Monastery celebrates the Day of St. George on May 6th. The
+                                same day is an official holiday of Pomorie town. </p>
+                        </div>
+                    </div>
+                    <!--End of each accordion item-->
+                </div>
+                <br>
+                <!--End of accordion parent-->
+                <div class="clear"></div>
+                <div id="TA_restaurantWidgetGreen591" class="TA_restaurantWidgetGreen"
+                     style="width: 200px; height: 60px; position: relative; margin: 0 auto!important; text-align: center;">
+                    <ul id="NJY6zEVmVKt" class="TA_links aDQ6LvAlbss">
+                        <li id="CF53FT" class="7b4lyN8CFVC">
+                            <a target="_blank" href="https://www.tripadvisor.co.uk/"><img
+                                src="https://www.tripadvisor.co.uk/img/cdsi/partner/tripadvisor_logo_117x18-24177-2.png"
+                                alt="TripAdvisor"></a>
+                        </li>
+                    </ul>
+                </div>
+                <script
+                    src="https://www.jscache.com/wejs?wtype=restaurantWidgetGreen&amp;uniq=591&amp;locationId=1522909&amp;icon=knifeAndFork&amp;lang=en_UK&amp;display_version=2"></script>
+                <div style="width: 160px; position:relative; margin: 15px auto;">
+                    <a href="https://www.travelmyth.com/Pomorie/Hotels/three_star" target="_blank"><img
+                        src="https://www.travelmyth.com/images/badges/travelmyth_238346_pomorie_three_star_p3en_web.png"
+                        width="160" border="0" alt="Pomorie 3 star hotels"></a>
+                </div>
+            </div>
+
+            <!-- ================================================================
+               ==================================FOOTER============================
+             ===================================================================== -->
+            <div class="footer">
+                <div class="downfooter">
+                    <div class="mainfooter">
+                        <div class="weather">
+                            <script
+                                src="https://vremeto.v.bg/graph/banner2_script.pl?lang=_eng&amp;st_id=8&amp;st_id=17&amp;st_id=2&amp;st_id=3&amp;rgb_bg_title=229i224i184&amp;rgb_font_title=109i98i87&amp;rgb_bg_date=229i224i184&amp;rgb_font_date=109i98i87&amp;rgb_bg_stname=229i224i184&amp;rgb_font_stname=109i98i87&amp;rgb_bg_temp=229i224i184&amp;rgb_bg_phenomen=229i224i184&amp;rgb_bg_url=229i224i184&amp;rgb_font_url=109i98i87"
+                                type=""></script>
+                        </div>
+                        <div class="footer_links">
+                            <h2 class="footerHeader">Partners</h2>
+                            <ul>
+                                <li><a href="https://www.guide-bulgaria.com/SE/Bourgas/Pomorie/Pomorie/"
+                                       target="_blank">Town of Pomorie</a></li>
+                                <li><a href="https://www.braynboxers.co.uk/" target="_blank">BRAINBOXERS</a></li>
+                                <li><a href="https://www.grupovo.bg/index.php?refid=111263" target="_blank">
+                                    Best Offers</a></li>
+                                <li><a href="https://www.tripadvisor.com" target="_blank">Trip Advisor</a></li>
+                                <li><a href="https://www.bulairbrokers.com" target="_blank">Bulairbrokers</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_links">
+                            <h2 class="footerHeader">Useful Links</h2>
+                            <ul>
+                                <li><a href="https://finance.news.bg/currency_calculator.php" target="_blank">
+                                    Monetary Conversion Calculator</a></li>
+                                <li><a href="https://www.sofia-airport.bg/" target="_blank">Sofia Airport</a></li>
+                                <li><a href="https://www.varna-airport.bg/" target="_blank">Varna Airport</a></li>
+                                <li><a href="https://bdz.creato.biz/" target="_blank">Rail-way stations</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="https://www.bulairbrokers.com/" target="_blank">BulAirBrokers</a></li>
+                                <li><a href="https://karting-bg.com/" target="_blank">KARTING SPORT</a></li>
+                                <li><a href="https://www.bghotelier.com/" target="_blank">bghotelier</a></li>
+                                <li><a href="https://www.hotel-in-bulgaria.com/" target="_blank">
+                                    Hotel in Bulgaria</a></li>
+                                <li><a href="https://asenovci.com" target="_blank">Garage doors</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- end of main footer div -->
+                    <div class="copyright">Copyright 2009 All rights reserved</div>
+                </div>    <!-- end of down footer div -->
+            </div><!-- end of footer div -->
+        </div><!-- end of box div -->
+    </div><!-- end of inner div -->
+</div> <!-- end of outer div -->
+
+<script type="application/javascript">
+    // Function to toggle the content visibility
+    const stylesToRemove = ['height', 'opacity'];
+
+    // Function to remove specific styles
+    function removeStyles(element, styles) {
+        styles.forEach(style => {
+            element.style[style] = '';
+            element.style['display'] = 'none';
+        });
+    }
+
+    function toggleContent(headerId, contentId) {
+        const target = document.getElementById(headerId);
+        const content = document.getElementById(contentId);
+        if (target && content) {
+            // header
+            let elements = document.querySelectorAll('.attraction_headings');
+            elements.forEach(element => {
+                element.classList.remove('header1_highlight');
+            });
+            target.classList.toggle('header1_highlight');
+
+            // content
+            let contents = document.querySelectorAll('.attraction-content');
+            contents.forEach(element => {
+                removeStyles(element, stylesToRemove);
+            });
+
+            content.style.display = 'block';
+            content.style.height = '160px';
+            content.style.opacity = '1';
+        }
+    }
+
+    // Add event listeners to all headers
+    document.querySelectorAll('.attraction_headings').forEach(header => {
+        header.addEventListener('click', (event) => {
+            const contentId = header.id.replace('-header', '-content');
+            toggleContent(header.id, contentId);
+        });
+    });
+</script>
+
+</body>
+</html>

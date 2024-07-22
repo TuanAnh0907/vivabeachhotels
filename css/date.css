@@ -1,0 +1,35 @@
+a.dp-choose-date {
+    float: left;
+    width: 25px;
+    height: 26px;
+    padding: 0;
+    margin:0 0 0 5px;
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+    background:url(/images/calendar.png) no-repeat;
+}
+a.dp-choose-date.dp-disabled {
+    background-position: 0 -20px;
+    cursor: default;
+}
+/*
+     FILE ARCHIVED ON 13:10:29 Oct 13, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:17:30 Jul 22, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.445
+  exclusion.robots: 0.022
+  exclusion.robots.policy: 0.014
+  esindex: 0.01
+  cdx.remote: 34.098
+  LoadShardBlock: 502.971 (3)
+  PetaboxLoader3.datanode: 259.436 (5)
+  PetaboxLoader3.resolve: 570.909 (3)
+  load_resource: 375.928 (2)
+*/

@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <meta name="keywords" xml:lang="bg" content=
+        "хотел, хотел Поморие, хотели, хотели Поморие, хотели Поморие изгодно, hoteli Pomorie, море, pomorie hoteli, почивка в Поморие, вила на морето "/>
+    <meta name="keywords" xml:lang="en" content=
+        "hotel, hotels, pomorie hotels, pomorie beach, resort pomorie, pomorie bg, hotels Black Sea, motels, cheap hotels Black Sea, cheap motels Black Sea, cheap hotels Pomorie, cheap beach, budget hotels Black Sea, beach hotels Bulgaria, beach hotel holiday, beach apartments, beach bed, beach holiday, beach holidays"/>
+    <meta name="description" xml:lang="bg"
+          content="Вашата мечтана морска почивка в Поморие! Най-доброто за Вас на най-добрата цена!"/>
+    <meta name="description" xml:lang="en"
+          content="Your dream Black sea holiday in Pomorie close 50m from the beach. The BEST for you, on a BEST PRICE!"/>
+    <meta name="robots" content="index, follow, all"/>
+    <meta name="revisit-after" content="7 days"/>
+    <meta name="distribution" content="Global"/>
+    <meta name="author" content="Maria Serafimova- design and Radoslav Radev - programming"/>
+    <meta name="verify-v1" content="rVepv5iOlpkEut5PWhmLx+Dg+i3nVAkD21XMa6zoRbM="/>
+    <title>Viva Beach - family beach hotel in Pomorie, Bulgaria</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/booking_online.css"/>
+
+    <script type="text/javascript" src="/javascript/iepngfix_tilebg.js"></script>
+    <!--[if lte IE 6]>
+    <style type="text/css">
+        img, .outerbox, .innerbox, .box, .logo, ul#vertmenu li a:hover, ul#vertmenu li a:focus, .current a, .gallery li, .gallery1 li, .footer, .downfooter, .mainfooter, .heading1, .heading2, #local_attractions, .attraction_headings, .attraction_headings:hover, .header1_highlight, .attractions_images em, .reservations fieldset legend span, .reservations fieldset.payment legend span, .contacts fieldset legend span, .reservations fieldset.left input, .reservations fieldset.right input, .contacts fieldset input, .reservations fieldset.left input.readonly, .reservations textarea#more_info, .contacts fieldset textarea, .imageform, .address {
+            behavior: url(javascript/iepngfix.htc)
+        }
+    </style>
+    <![endif]-->
+    <script type="text/javascript" src="/javascript/fbparam.js"></script>
+    <script type="text/javascript" src="/javascript/fblib.js"></script>
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/jquery.lightbox-0.5.css" media="screen"/>
+    <!-- Lightbox JavaScript -->
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/javascript/jquery.lightbox-0.5.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('a.lightbox').lightBox(); // Select all links with lightbox class
+        });
+    </script>
+    <script type="text/javascript">
+        function validateEmail(value) {
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return filter.test(value);
+        }
+
+        function validateSendFriendForm() {
+            var result = true;
+            var txtFriendName = document.getElementsByName('txtFriendName')[0];
+            var lblFriendName = document.getElementById('lblFriendName');
+            if (txtFriendName.value != '') {
+                lblFriendName.style.color = '';
+                lblFriendName.firstChild.data = 'Вашето име:';
+            } else {
+                lblFriendName.style.color = 'red';
+                lblFriendName.firstChild.data = 'Моля въведете име!';
+                result = false;
+            }
+            var txtFriendEmail = document.getElementsByName('txtFriendEmail')[0];
+            var lblFriendEmail = document.getElementById('lblFriendEmail');
+            if (txtFriendEmail.value != '') {
+                if (validateEmail(txtFriendEmail.value)) {
+                    lblFriendEmail.style.color = '';
+                    lblFriendEmail.firstChild.data = 'e-mail на приятел:';
+                } else {
+                    lblFriendEmail.style.color = 'red';
+                    lblFriendEmail.firstChild.data = 'Моля въведете валиден e-mail адрес!';
+                    result = false;
+                }
+            } else {
+                lblFriendEmail.style.color = 'red';
+                lblFriendEmail.firstChild.data = 'Моля въведете e-mail!';
+                result = false;
+            }
+            return result;
+        }
+    </script>
+    <!-- SIFR -->
+    <link rel="stylesheet" href="/css/sifr.css" type="text/css"/>
+    <script src="/javascript/sifr.js" type="text/javascript"></script>
+    <script src="/javascript/sifr-config.js" type="text/javascript"></script>
+    <!-- RESERVATION_FORM -->
+    <script language="javascript" type="text/javascript" src="/javascript/fblib.js"></script>
+    <script language="javascript" type="text/javascript" src="/javascript/fbparam.js"></script>
+</head>
+<body onload="begin();">
+<div class="outerbox">
+    <div class="innerbox">
+        <div class="box">
+            <!-- ================================================================
+                   =============================HEADER=============================
+                 ================================================================-->
+            <div class="toprow">
+                <h1 class="logo"><span>Viva Beach hotel</span></h1>
+                <div class="headerright">
+                    <ul class="languages">
+                        <li><a href="/"><img src="/images/flags/bg.gif" alt=""/>BG</a>
+                            <span>|</span></li>
+                        <li><a href="/english"><img src="/images/flags/en.gif" alt=""/>EN</a></li>
+                    </ul>
+                </div><!-- end of header right div -->
+            </div>  <!-- end of top row div -->
+            <div class="bottomrow">
+                <ul id="vertmenu">
+                    <li class="current">
+                        <a href="/english">Home</a>
+                    </li>
+                    <li>
+                        <a href="/english/about.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="/english/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="/english/bistro.html">Bistro</a>
+                    </li>
+                    <li>
+                        <a href="/english/prices.html">Price-list</a>
+                    </li>
+                    <li>
+                        <a href="/english/contacts.html">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="/english/landmarks.html">Local attractions</a>
+                    </li>
+                    <li>
+                        <a href="/english/services.html">Additional services</a>
+                    </li>
+                    <li>
+                        <a href="/english/booking.html">Booking</a>
+                    </li>
+                    <li>
+                        <a href="/english/recommendations.html">Recommendations</a>
+                    </li>
+
+                </ul>
+                <div class="flash">
+                    <h1 class="heading2"><em>Family hotel Viva Beach</em> <a href="">www.vivabeachhotels.com</a></h1>
+                    <object type="application/x-shockwave-flash" data="" width="557" height="340"
+                            title="header" tabindex="0">
+                        <param name="wmode" value="transparent"/>
+                        <param name="allowFullScreen" value="false"/>
+                        <param name="movie" value="header.swf"/>
+                        <param name="quality" value="high"/>
+                        <img src="/images/flash.png" alt="Pomorie"/>
+                    </object>
+                </div>
+            </div><!-- end of bottomrow div -->
+            <div id="TICKER" onmouseover="TICKER_PAUSED=true" onmouseout="TICKER_PAUSED=false">
+                <span style="font-family:Arial,serif; font-size:12px; color:#444444" id="TICKER_BODY" width="100%">
+				    <span>Children up to 2 years old are free of charge.</span>
+                    <span>Children from 2 to 12 years, on extra bed pay 50% of the price.</span>
+                    <span>Children from 2 to 12 years, on regular bed have 30% discount.</span>
+                    <span>Adult on extra bed has 20% discount of the price for a regular bed.</span>
+                    <span>Additional discounts for bigger groups, or longer stay, may be specified at the hotel with the manager.</span>
+                    <span>5% discount for loyal clients!</span>
+                    <span>BIG SAVINGS!!! Welcome to Viva Beach Hotel! \"Early Birds\" 2015 offer! Enjoy your holiday at Black sea coast in VIVA BEACH hotel Pomorie for only 18.00 euro per person per night with breakfast&amp;dinner(HB). Extended packages are available - B&amp;B, HB+, FB, massages&amp;relaxing therapies. Take it before it finish! (Cansellation or change of reservation is not available, no refund) Ask for our special winter 2014/15 offers. We can organise your family or business parties!</span>
+				</span>
+            </div>
+            <script type="text/javascript" src="/javascript/webticker_lib.js" language="javascript"></script>
+        </div><!-- end of box div -->
+    </div><!-- end of inner box div -->
+</div> <!-- end of outer div -->
+<div class="outerbox">
+    <div class="innerbox">
+        <div class="box">
+            <!-- ================================================================
+                   ==================================CONTENT=======================
+                 ================================================================ -->
+            <div class="content"><h1 class="heading1">Welcome to Viva Beach Hotel</h1>
+                <div class="main">
+                    <p>The hotel opened its door for our guests in 2006, and since then, we daily provide comfort and
+                        jolly atmosphere to everyone, who has crossed our threshold. You will find us easily – just
+                        follow your heart. The hotel is located 50 m. away from the south beach in Pomorie, in the
+                        immediate vicinity of the five stars hotel complex “Sunset resort” and “Festa Pomorie Resort”.
+                        Pomorie town is located at a distance of 18 km northeast of Bourgas, at 8 km of the Bourgas
+                        airport, at 20 km of the “Sunny Beach” Sea resort, and at 408 km east of our capital city
+                        Sofia.</p>
+                    <p>In an immediate vicinity to the hotel, there is a bus station to the old part of Pomorie, to
+                        Bourgas, and Sunny Beach. The distance from the hotel to the centre of the town is about 3 km.
+                    </p>
+                    <p style="margin-bottom: 20px;">VIVA BEACH offers its guests: two double-bed rooms, two triple rooms
+                        apartment for 4 people, apartment for 4+2 people, and apartment for 6 people. Each room has its
+                        own bathroom and WC, balcony, air-conditioner, minibar and cable TV. On the ground floor there
+                        are the reception, the sauna, the fitness room, and the bistro where you could have delicious
+                        food form our national or the European cuisine. The hotel is operating through the whole
+                        year.</p>
+                    <!--<h5 class="reserve_now"><a href="reservations.php?ln=2">Book now!</a></h5> -->
+                </div>
+                <h1 class="heading1" id="promoh">Promotions</h1>
+                <ul class="promo">
+                    <li>Children up to 2 years old are free of charge.</li>
+                    <li>Children from 2 to 12 years, on extra bed pay 50% of the price.</li>
+                    <li>Children from 2 to 12 years, on regular bed have 30% discount.</li>
+                    <li>Adult on extra bed has 20% discount of the price for a regular bed.</li>
+                    <li>Additional discounts for bigger groups, or longer stay, may be specified at the hotel with the
+                        manager.
+                    </li>
+                    <li>5% discount for loyal clients!</li>
+                    <li>BIG SAVINGS!!! Welcome to Viva Beach Hotel! \"Early Birds\" 2015 offer! Enjoy your holiday at
+                        Black sea coast in VIVA BEACH hotel Pomorie for only 18.00 euro per person per night with
+                        breakfast&amp;dinner(HB). Extended packages are available - B&amp;B, HB+, FB, massages&amp;relaxing
+                        therapies. Take it before it finish! (Cansellation or change of reservation is not available, no
+                        refund) Ask for our special winter 2014/15 offers. We can organise your family or business
+                        parties!
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                <div id="TA_restaurantWidgetGreen591" class="TA_restaurantWidgetGreen"
+                     style="width: 200px; height: 60px; position: relative; margin: 0 auto!important; text-align: center;">
+                    <ul id="NJY6zEVmVKt" class="TA_links aDQ6LvAlbss">
+                        <li id="CF53FT" class="7b4lyN8CFVC">
+                            <a target="_blank" href="https://www.tripadvisor.co.uk/"><img
+                                src="https://www.tripadvisor.co.uk/img/cdsi/partner/tripadvisor_logo_117x18-24177-2.png"
+                                alt="TripAdvisor"></a>
+                        </li>
+                    </ul>
+                </div>
+                <script
+                    src="https://www.jscache.com/wejs?wtype=restaurantWidgetGreen&amp;uniq=591&amp;locationId=1522909&amp;icon=knifeAndFork&amp;lang=en_UK&amp;display_version=2"></script>
+                <div style="width: 160px; position:relative; margin: 15px auto;">
+                    <a href="https://www.travelmyth.com/Pomorie/Hotels/three_star" target="_blank"><img
+                        src="https://www.travelmyth.com/images/badges/travelmyth_238346_pomorie_three_star_p3en_web.png"
+                        width="160" border="0" alt="Pomorie 3 star hotels"></a>
+                </div>
+            </div>
+            <!-- ================================================================
+               ==================================FOOTER============================
+             ===================================================================== -->
+            <div class="footer">
+                <div class="downfooter">
+                    <div class="mainfooter">
+                        <div class="weather">
+                            <script
+                                src="https://vremeto.v.bg/graph/banner2_script.pl?lang=_eng&amp;st_id=8&amp;st_id=17&amp;st_id=2&amp;st_id=3&amp;rgb_bg_title=229i224i184&amp;rgb_font_title=109i98i87&amp;rgb_bg_date=229i224i184&amp;rgb_font_date=109i98i87&amp;rgb_bg_stname=229i224i184&amp;rgb_font_stname=109i98i87&amp;rgb_bg_temp=229i224i184&amp;rgb_bg_phenomen=229i224i184&amp;rgb_bg_url=229i224i184&amp;rgb_font_url=109i98i87"
+                                type=""></script>
+                        </div>
+                        <div class="footer_links">
+                            <h2 class="footerHeader">Partners</h2>
+                            <ul>
+                                <li><a href="https://www.guide-bulgaria.com/SE/Bourgas/Pomorie/Pomorie/"
+                                       target="_blank">Town of Pomorie</a></li>
+                                <li><a href="https://www.braynboxers.co.uk/" target="_blank">BRAINBOXERS</a></li>
+                                <li><a href="https://www.grupovo.bg/index.php?refid=111263" target="_blank">
+                                    Best Offers</a></li>
+                                <li><a href="https://www.tripadvisor.com" target="_blank">Trip Advisor</a></li>
+                                <li><a href="https://www.bulairbrokers.com" target="_blank">Bulairbrokers</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_links">
+                            <h2 class="footerHeader">Useful Links</h2>
+                            <ul>
+                                <li><a href="https://finance.news.bg/currency_calculator.php" target="_blank">
+                                    Monetary Conversion Calculator</a></li>
+                                <li><a href="https://www.sofia-airport.bg/" target="_blank">Sofia Airport</a></li>
+                                <li><a href="https://www.varna-airport.bg/" target="_blank">Varna Airport</a></li>
+                                <li><a href="https://bdz.creato.biz/" target="_blank">Rail-way stations</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="https://www.bulairbrokers.com/" target="_blank">BulAirBrokers</a></li>
+                                <li><a href="https://karting-bg.com/" target="_blank">KARTING SPORT</a></li>
+                                <li><a href="https://www.bghotelier.com/" target="_blank">bghotelier</a></li>
+                                <li><a href="https://www.hotel-in-bulgaria.com/" target="_blank">
+                                    Hotel in Bulgaria</a></li>
+                                <li><a href="https://asenovci.com" target="_blank">Garage doors</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- end of main footer div -->
+                    <div class="copyright">Copyright 2009 All rights reserved</div>
+                </div>    <!-- end of down footer div -->
+            </div><!-- end of footer div -->
+        </div><!-- end of box div -->
+    </div><!-- end of inner div -->
+</div> <!-- end of outer div -->
+</body>
+</html>

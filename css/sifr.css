@@ -1,0 +1,99 @@
+
+@media screen {
+  .sIFR-flash {
+    visibility: visible !important;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sIFR-replaced, .sIFR-ignore {
+    visibility: visible !important;
+  }
+  
+  .sIFR-alternate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .sIFR-replaced div.sIFR-fixfocus {
+    margin: 0pt; 
+    padding: 0pt; 
+    overflow: auto; 
+    letter-spacing: 0px; 
+    float: none;
+  }
+  /*===================PAGE==========*/
+.sIFR-active h2.subheader, .sIFR-active h2.footerHeader, .sIFR-active h1.heading1, .sIFR-active h2.pricetitle, .sIFR-active h5.reserve_now{
+	visibility: hidden;
+	font-family: Verdana;
+	font-size: 12px;
+	padding-top: 28px;
+ }
+.sIFR-active h2.pricetitle {padding: 0; margin:0 0 0 10px; display: inline; width: 600px; float: left;}
+.sIFR-active .prices_header a{margin:2px 0 0 5px; padding: 0; float: left; width: 20px; height: 13px;}
+.sIFR-active .prices_header{padding: 0;}
+.sIFR-active h2.footerHeader {padding: 0;}
+.sIFR-active h1.heading1 {padding-top: 40px;}
+.sIFR-active h2.subheader{width: 100%; margin-top: -40px;}
+.sIFR-active h2.footerHeader {display: block; width: 200px;}
+.sIFR-active h5.reserve_now a{
+	text-decoration: none; 
+	color: #433d36;
+  }
+.sIFR-active h5.reserve_now a:hover{
+  text-decoration: none; 
+  color: #433d36;
+  }
+
+}
+
+@media print {
+  .sIFR-flash {
+    display    : none !important;
+    height     : 0;
+    width      : 0;
+    position   : absolute;
+    overflow   : hidden;
+  }
+  
+  .sIFR-alternate {
+    visibility : visible !important;
+    display    : block   !important;
+    position   : static  !important;
+    left       : auto    !important;
+    top        : auto    !important;
+    width      : auto    !important;
+    height     : auto    !important;
+  }
+}
+
+/*
+Place CSS rules for to-be-replaced elements here. Prefix by .sIFR-active
+so they only apply if sIFR is active. Make sure to limit the CSS to the screen
+media type, in order not to have the printed text come out weird.
+*/
+/*
+     FILE ARCHIVED ON 09:20:24 Oct 14, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:36:18 Jul 22, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.856
+  exclusion.robots: 0.058
+  exclusion.robots.policy: 0.043
+  esindex: 0.014
+  cdx.remote: 49.297
+  LoadShardBlock: 298.892 (3)
+  PetaboxLoader3.datanode: 210.095 (4)
+  PetaboxLoader3.resolve: 222.645 (2)
+  load_resource: 146.893
+*/
